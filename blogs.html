@@ -1,0 +1,233 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Awareness</title>
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="home.html" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <ul nav class="nav">
+                <class="nav-item"><a href="home.html" class="active">home</a>
+                    <class="nav-item"><a href="about.html">about</a>
+                        <class="nav-item"><a href="prevent.html">prevent</a>
+                            <class="nav-item"><a href="expert.html">experts</a>
+                                <class="nav-item"><a href="contact.html">contact</a>
+                                    <class="nav-item"><a href="blogs.html">blogs</a>
+                                        </nav>
+
+                                        <style>
+                                            :root {
+                                                --main-color: green;
+                                                --black: black;
+                                                --box-shadow: 0 5px 10px rgba(7, 75, 41, 0.61);
+                                            }
+
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                outline: none;
+                                                border: none;
+                                                text-decoration: none !important;
+                                                text-transform: capitalize;
+                                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            }
+
+                                            html {
+                                                scroll-padding-top: 60px;
+                                            }
+
+                                            section {
+                                                padding: 20px 0;
+                                            }
+
+                                            section:nth-child(odd) {
+                                                background: #f8f8fe;
+                                            }
+
+                                            .heading {
+                                                text-align: center;
+                                                padding: 0 15px;
+                                                padding-bottom: 5px;
+                                                color: var(--black);
+                                                font-size: 30px;
+                                            }
+
+                                            .heading span {
+                                                color: var(--main-color);
+                                            }
+
+                                            .link-btn {
+                                                display: inline-block;
+                                                background: var(--main-color);
+                                                color: #fff;
+                                                border-radius: 50px;
+                                                padding: 5px 25px;
+                                                font-size: 17px;
+                                                cursor: pointer;
+                                                box-shadow: var(--box-shadow);
+                                            }
+
+                                            .link-btn:hover {
+                                                color: #fff;
+                                                background: var(--black);
+                                            }
+
+                                            header {
+                                                box-shadow: var(--box-shadow);
+                                                background: #fff;
+                                            }
+
+                                            header .logo {
+                                                font-size: 20px;
+                                                color: var(--black);
+                                            }
+
+                                            header .logo span {
+                                                color: var(--main-color);
+                                            }
+
+                                            header .nav a {
+                                                margin-left: 3px;
+                                                border-radius: 50px;
+                                                color: var(--black);
+                                                padding: 5px 15px;
+                                            }
+
+                                            header .nav a.active,
+                                            header .nav a:hover {
+                                                background: var(--main-color);
+                                                box-shadow: var(--box-shadow);
+                                                color: #fff;
+                                            }
+                                            .blogs .box {
+                                width: 350px;
+                                border-radius: 5px;
+                                box-shadow: var(--box-shadow);
+                                background: #fff;
+                            }
+
+                            .blogs .box .image {
+                                height: 200px;
+                                width: 100%;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                background: #f8f8fe;
+                            }
+
+                            .blogs .box .image img {
+                                transition: .2s linear;
+                            }
+
+                            .blogs .box:hover .image img {
+                                transform: scale(1.1);
+                            }
+
+                            .blogs .box .content h3 {
+                                padding: 5px 0;
+                                font-size: 20px;
+                                color: var(--black);
+                            }
+
+                            .blogs .box .content .icons {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 20px;
+                                padding-top: 20px;
+                                border-top: 1px solid rgba(0, 0, 0, .1);
+                            }
+
+                            .blogs .box .content .icons a {
+                                color: #777;
+                                font-size: 13px;
+                            }
+
+                            .blogs .box .content .icons a i {
+                                padding-right: 7px;
+                            }
+
+
+                            .blogs .box .content .icons a:hover {
+                                color: var(--main-color);
+                            }
+                                          
+                                        </style>
+
+        </div>
+        <section class="blogs" id="blogs">
+
+            <h1 class="heading"> our latest <span>blogs</span> </h1>
+
+            <div class="container">
+
+                <div class="d-flex justify-content-center flex-wrap">
+
+                    <div class="box p-3 m-2">
+                        <div class="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPtoLl7sbN4BsDBh4hFHJWcZwi6j1hMt-YQon3tQldQ&usqp=CAU&ec=48665699" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="content p-2">
+                            <h3>Long Covid: 5 big questions about post covid syndrome </h3>
+                            <a href="https://www.bannerhealth.com/healthcareblog/better-me/long-covid-questions-answered-about-post-covid-syndrome" class="link-btn">read more</a>
+                            <div class="icons">
+                                <a href="#"><i class="fas fa-user"></i>by cdgi</a>
+                                <a href="#"><i class="fas fa-calendar"></i>13 Apr, 2021</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box p-3 m-2">
+                        <div class="image">
+                            <img src="data:image/jpeg;base64,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" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="content p-2">
+                            <h3>COVID-19 Vaccines for Kids Ages 5 to 11, Here’s What to Know</h3>
+                            <a href="https://www.bannerhealth.com/healthcareblog/advise-me/what-to-know-about-covid-19-vaccines-for-kids-5-to-11" class="link-btn">read more</a>
+                            <div class="icons">
+                                <a href="#"><i class="fas fa-user"></i>by Regan Olssan</a>
+                                <a href="#"><i class="fas fa-calendar"></i>09 Nov, 2021</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box p-3 m-2">
+                        <div class="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDV5rzZjhl03TCxMtPHxhIZPaiuJj_zeOd89cDjNsyg&usqp=CAU&ec=48665699" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="content p-2">
+                            <h3>What to Know About Respiratory Syncytial Virus (RSV)</h3>
+                            <a href="https://www.bannerhealth.com/healthcareblog/teach-me/why-the-respiratory-disease-rsv-is-rising-in-children" class="link-btn">read more</a>
+                            <div class="icons">
+                                <a href="#"><i class="fas fa-user"></i>by Regan Olssan</a>
+                                <a href="#"><i class="fas fa-calendar"></i>01 Nov, 2021</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>

@@ -1,0 +1,399 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Awareness</title>
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="home.html" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <ul nav class="nav">
+                <class="nav-item"><a href="home.html" class="active">home</a>
+                    <class="nav-item"><a href="about.html">about</a>
+                        <class="nav-item"><a href="prevent.html">prevent</a>
+                            <class="nav-item"><a href="expert.html">experts</a>
+                                <class="nav-item"><a href="contact.html">contact</a>
+                                    <class="nav-item"><a href="blogs.html">blogs</a>
+                                        </nav>
+
+                                        <style>
+                                            :root {
+                                                --main-color: green;
+                                                --black: black;
+                                                --box-shadow: 0 5px 10px rgba(7, 75, 41, 0.61);
+                                            }
+
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                outline: none;
+                                                border: none;
+                                                text-decoration: none !important;
+                                                text-transform: capitalize;
+                                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            }
+                                            html {
+                                                scroll-padding-top: 60px;
+                                                overflow:scroll;
+                                            }
+                                            
+                                            section {
+                                                padding: 20px 0;
+                                                height: 200vh;
+                                                width: 100%;
+                                                display:flex;
+                                                justify-content:center;
+                                            }
+
+                                            section:nth-child(odd) {
+                                                background: #f8f8fe;
+                                            }
+
+                                            .heading {
+                                                text-align: center;
+                                                padding: 0 15px;
+                                                padding-bottom: 5px;
+                                                color: var(--black);
+                                                font-size: 30px;
+                                            }
+
+                                            .heading span {
+                                                color: var(--main-color);
+                                            }
+
+                                            .link-btn {
+                                                display: inline-block;
+                                                background: var(--main-color);
+                                                color: #fff;
+                                                border-radius: 50px;
+                                                padding: 5px 25px;
+                                                font-size: 17px;
+                                                cursor: pointer;
+                                                box-shadow: var(--box-shadow);
+                                            }
+
+                                            .link-btn:hover {
+                                                color: #fff;
+                                                background: var(--black);
+                                            }
+
+                                            header {
+                                                box-shadow: var(--box-shadow);
+                                                background: #fff;
+                                            }
+
+                                            header .logo {
+                                                font-size: 20px;
+                                                color: var(--black);
+                                            }
+
+                                            header .logo span {
+                                                color: var(--main-color);
+                                            }
+
+                                            header .nav a {
+                                                margin-left: 3px;
+                                                border-radius: 50px;
+                                                color: var(--black);
+                                                padding: 5px 15px;
+                                            }
+
+                                            header .nav a.active,
+                                            header .nav a:hover {
+                                                background: var(--main-color);
+                                                box-shadow: var(--box-shadow);
+                                                color: #fff;
+                                            }
+                                        </style>
+                                         <style>
+                                            #menu-bar {
+                                                color: var(--black);
+                                                cursor: pointer;
+                                                font-size: 25px;
+                                                transition: .2s linear;
+                                            }
+                
+                                            .home {
+                                                min-height: 100vh;
+                                                background: url(../images/home-bg.png) no-repeat;
+                                                background-position: center;
+                                                background-size: cover;
+                                            }
+                
+                                            .home .content span {
+                                                color: var(--main-color);
+                                                font-size: 20px;
+                                            }
+                
+                                            .home .content h3 {
+                                                color: var(--black);
+                                                font-size: 50px;
+                                                font-weight: bolder;
+                                            }
+                
+                                            .about .content h3 {
+                                                color: var(--black);
+                                                font-size: 33px;
+                                            }
+                
+                                            .about .content p {
+                                                color: #777;
+                                                font-size: 14px;
+                                            }
+                
+                                            .prevent .box {
+                                                flex: 1 1 300px;
+                                                background: #f8f8fe;
+                                                border-radius: 5px;
+                                                text-align: center;
+                                            }
+                
+                                            .prevent .box img {
+                                                margin-bottom: 10px;
+                                                height: 70px;
+                                            }
+                
+                                            .prevent .box h3 {
+                                                color: var(--black);
+                                                font-size: 20px;
+                                            }
+                
+                                            .prevent .box p {
+                                                color: var(--black);
+                                                font-size: 14px;
+                                            }
+                
+                                            .experts .box {
+                                                width: 500px;
+                                                background: #fff;
+                                                border-radius: 5px;
+                                                box-shadow: var(--box-shadow);
+                                                margin: 5px;
+                                                padding: 15px;
+                                                text-align: center;
+                                                position: relative;
+                                                overflow: hidden;
+                                            }
+                
+                                            .experts .box img {
+                                                background: #f8f8fe;
+                                                border-radius: 5px;
+                                                width: 20%;
+                                                margin-bottom: 8px;
+                                            }
+                
+                                            .experts .box h3 {
+                                                font-size: 22px;
+                                                margin: 2px 0;
+                                                color: var(--black);
+                                            }
+                
+                                            .experts .box span {
+                                                font-size: 15px;
+                                                color: var(--main-color);
+                                            }
+                
+                                            .experts .box .share {
+                                                position: absolute;
+                                                top: 5px;
+                                                right: -50px;
+                                                transition: .2s;
+                                            }
+                
+                                            .experts .box:hover .share {
+                                                right: 15px;
+                                            }
+                
+                                            .experts .box .share a {
+                                                border-radius: 5px;
+                                                background: var(--main-color);
+                                                color: #fff;
+                                                display: block;
+                                                height: 50px;
+                                                width: 40px;
+                                                line-height: 40px;
+                                                margin-top: 5px;
+                                            }
+                
+                                            .experts .box .share a:hover {
+                                                background: var(--black);
+                                            }
+                
+                                            .contact form {
+                                                padding: 15px;
+                                                border-radius: 5px;
+                                                box-shadow: var(--box-shadow);
+                                            }
+                
+                                            .contact form .box,
+                                            .contact form textarea {
+                                                background: #f8f8fe;
+                                                border-radius: 5px;
+                                                font-size: 17px;
+                                                padding: 10px;
+                                                margin: 7px 0;
+                                                width: 100%;
+                                                text-transform: none;
+                                                color: var(--black);
+                                            }
+                
+                                            .contact form textarea {
+                                                resize: none;
+                                                height: 200px;
+                                            }
+                
+                                            .contact .map {
+                                                border-radius: 5px;
+                                                height: 100%;
+                                                width: 100%;
+                                            }
+                
+                                            .blogs .box {
+                                                width: 350px;
+                                                border-radius: 5px;
+                                                box-shadow: var(--box-shadow);
+                                                background: #fff;
+                                            }
+                
+                                            .blogs .box .image {
+                                                height: 200px;
+                                                width: 100%;
+                                                border-radius: 5px;
+                                                overflow: hidden;
+                                                background: #f8f8fe;
+                                            }
+                
+                                            .blogs .box .image img {
+                                                transition: .2s linear;
+                                            }
+                
+                                            .blogs .box:hover .image img {
+                                                transform: scale(1.1);
+                                            }
+                
+                                            .blogs .box .content h3 {
+                                                padding: 5px 0;
+                                                font-size: 20px;
+                                                color: var(--black);
+                                            }
+                
+                                            .blogs .box .content .icons {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                margin-top: 20px;
+                                                padding-top: 20px;
+                                                border-top: 1px solid rgba(0, 0, 0, .1);
+                                            }
+                
+                                            .blogs .box .content .icons a {
+                                                color: #777;
+                                                font-size: 13px;
+                                            }
+                
+                                            .blogs .box .content .icons a i {
+                                                padding-right: 7px;
+                                            }
+                
+                
+                                            .blogs .box .content .icons a:hover {
+                                                color: var(--main-color);
+                                            }
+                                        </style>
+
+        </div>
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="row align-items-center flex-wrap-reverse">
+
+                    <div class="col-md-6 content">
+                        <h3>What is coronavirus?</h3>
+                        <p>Corona viruses are a large family of viruses which may cause illness in animals or
+                            humans. In humans, several coronaviruses are known to cause respiratory infections
+                            ranging from the common cold to more severe diseases such as Middle East Respiratory
+                            Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).</p>
+                        <p>It is the largest category for an RNA virus. In most cases, it is difficult to detect
+                            if coronavirus or a different cold-causing virus is causing you fever. Known as
+                            “COVID-19”, the newly identified coronavirus can cause pneumonia, and like other
+                            respiratory infections, it has an incubation of between 1 and 14 days.COVID-19 can
+                            be severe, and has caused millions of deaths around the world as well as lasting
+                            health problems in some who have survived the illness.
+                            The coronavirus can be spread from person to person. It is diagnosed with a test.
+                        </p>
+                        <h3>
+                         what are the symptoms of covid-19?
+                        </h3>
+                        <p>
+                            The most common symptoms of COVID-19 are
+
+fever 
+chills
+sore throat.
+Other symptoms that are less common and may affect some patients include:
+
+muscle aches
+severe fatigue or tiredness
+runny or blocked nose, or sneezing
+headache
+sore eyes
+dizziness
+new and persistent cough
+tight chest or chest pain
+shortness of breath
+hoarse voice
+heavy arms/legs
+numbness/tingling
+nausea, vomiting, abdominal pain/ belly ache, or diarrhoea
+appetite loss
+loss or change of sense of taste or smell
+difficulty sleeping.
+
+
+Symptoms of severe COVID‐19 disease which need immediate medical attention include:
+
+difficulty in breathing, especially at rest, or unable to speak in sentences
+confusion
+drowsiness or loss of consciousness
+persistent pain or pressure in the chest
+skin being cold or clammy, or turning pale or a bluish colour
+loss of speech or movement.
+
+
+If possible, call your health care provider, hotline or health facility first, so you can be directed to the right clinic.
+
+People who have pre-existing health problems are at higher risk when they have COVID-19; they should seek medical help early if worried about their condition. These include, but are not limited to: those taking immunosuppressive medication; those with chronic heart, lung, liver or rheumatological problems; those with HIV, diabetes, cancer or dementia.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="\Users\rahul\Desktop\web project/about.svg" class="w-100" alt="">
+                    </div>
+
+                </div>
+
+            </div>

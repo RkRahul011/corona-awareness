@@ -1,0 +1,372 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Awareness</title>
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="home.html" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <ul nav class="nav">
+                <class="nav-item"><a href="home.html" class="active">home</a>
+                    <class="nav-item"><a href="about.html">about</a>
+                        <class="nav-item"><a href="prevent.html">prevent</a>
+                            <class="nav-item"><a href="expert.html">experts</a>
+                                <class="nav-item"><a href="contact.html">contact</a>
+                                    <class="nav-item"><a href="blogs.html">blogs</a>
+                                        </nav>
+
+                                        <style>
+                                            :root {
+                                                --main-color: green;
+                                                --black: black;
+                                                --box-shadow: 0 5px 10px rgba(7, 75, 41, 0.61);
+                                            }
+
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                outline: none;
+                                                border: none;
+                                                text-decoration: none !important;
+                                                text-transform: capitalize;
+                                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            }
+
+                                            html {
+                                                scroll-padding-top: 60px;
+                                            }
+
+                                            section {
+                                                padding: 20px 0;
+                                            }
+
+                                            section:nth-child(odd) {
+                                                background: #f8f8fe;
+                                            }
+
+                                            .heading {
+                                                text-align: center;
+                                                padding: 0 15px;
+                                                padding-bottom: 5px;
+                                                color: var(--black);
+                                                font-size: 30px;
+                                            }
+
+                                            .heading span {
+                                                color: var(--main-color);
+                                            }
+
+                                            .link-btn {
+                                                display: inline-block;
+                                                background: var(--main-color);
+                                                color: #fff;
+                                                border-radius: 50px;
+                                                padding: 5px 25px;
+                                                font-size: 17px;
+                                                cursor: pointer;
+                                                box-shadow: var(--box-shadow);
+                                            }
+
+                                            .link-btn:hover {
+                                                color: #fff;
+                                                background: var(--black);
+                                            }
+
+                                            header {
+                                                box-shadow: var(--box-shadow);
+                                                background: #fff;
+                                            }
+
+                                            header .logo {
+                                                font-size: 20px;
+                                                color: var(--black);
+                                            }
+
+                                            header .logo span {
+                                                color: var(--main-color);
+                                            }
+
+                                            header .nav a {
+                                                margin-left: 3px;
+                                                border-radius: 50px;
+                                                color: var(--black);
+                                                padding: 5px 15px;
+                                            }
+
+                                            header .nav a.active,
+                                            header .nav a:hover {
+                                                background: var(--main-color);
+                                                box-shadow: var(--box-shadow);
+                                                color: #fff;
+                                            }
+                                        </style>
+
+        </div>
+        <section class="prevent" id="prevent">
+
+            <h1 class="heading"> how to <span>prevent</span>? </h1>
+
+            <div class="container">
+
+                <div class="d-flex flex-wrap justify-content-center">
+
+                    <div class="box p-4 m-2">
+                        <img src="https://static.vecteezy.com/system/resources/previews/004/595/214/original/man-wearing-mask-due-to-infection-of-virus-and-pollution-human-in-medical-mask-protect-against-infection-family-disease-prevention-cartoon-flat-illustration-vector.jpg" alt="">
+                        <h3>wear a mask</h3>
+                        <p> may reduce the spread of coronavirus droplets in certain circumstances.</p>
+                    </div>
+
+                    <div class="box p-4 m-2">
+                        <img src="https://img.freepik.com/free-vector/boy-cleaning-hands-white-background_1308-43304.jpg?w=2000" alt="">
+                        <h3>wash your hand</h3>
+                        <p>Handwashing with soap removes germs from hands.</p>
+                    </div>
+
+                    <div class="box p-4 m-2">
+                        <img src="https://thumbs.dreamstime.com/b/man-see-doctor-check-himself-consulting-female-patient-women-s-health-disease-mental-illness-wear-face-mask-surgical-176620670.jpg" alt="">
+                        <h3>consult doctor</h3>
+                        <p> Doctor can understand your problem and give you medicines for relief.</p>
+                    </div>
+
+                    <div class="box p-4 m-2">
+                        <img src="https://thumbs.dreamstime.com/z/do-not-touch-your-face-sign-avoid-touching-hand-contact-head-mouth-eyes-nose-hygiene-prevention-coronavirus-vector-skin-204680751.jpg" alt="">
+                        <h3>avoid touching</h3>
+                        <p>Avoid touching eyes, nose and mouth.</p>
+                    </div>
+
+                    <div class="box p-4 m-2">
+                        <img src="https://media.istockphoto.com/id/1225763199/vector/flat-concept-illustration-with-two-women-during-covid-19-pandemic-greeting-gesture-stopping.jpg?s=612x612&w=0&k=20&c=cImzyAGpNHvG1DX37k7lZI-zArWKLrHHRGBG_xacmXo=" alt="">
+                        <h3>avoid contact</h3>
+                        <p>Hands touch many surfaces and can pick up viruses.</p>
+                    </div>
+
+                    <div class="box p-4 m-2">
+                        <img src="https://c8.alamy.com/comp/2GX4DT1/a-young-man-cleaning-house-2GX4DT1.jpg" alt="">
+                        <h3>clean everyday</h3>
+                        <p>Cleaning and disinfecting high-touch surfaces in your home regularly is an
+                            important precaution to lower the risk of infection.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <style>
+                #menu-bar {
+                    color: var(--black);
+                    cursor: pointer;
+                    font-size: 25px;
+                    transition: .2s linear;
+                }
+
+                .home {
+                    min-height: 100vh;
+                    background: url(../images/home-bg.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .home .content span {
+                    color: var(--main-color);
+                    font-size: 20px;
+                }
+
+                .home .content h3 {
+                    color: var(--black);
+                    font-size: 50px;
+                    font-weight: bolder;
+                }
+
+                .about .content h3 {
+                    color: var(--black);
+                    font-size: 33px;
+                }
+
+                .about .content p {
+                    color: #777;
+                    font-size: 14px;
+                }
+
+                .prevent .box {
+                    flex: 1 1 300px;
+                    background: #f8f8fe;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+
+                .prevent .box img {
+                    margin-bottom: 10px;
+                    height: 70px;
+                }
+
+                .prevent .box h3 {
+                    color: var(--black);
+                    font-size: 20px;
+                }
+
+                .prevent .box p {
+                    color: var(--black);
+                    font-size: 14px;
+                }
+
+                .experts .box {
+                    width: 260px;
+                    background: #fff;
+                    border-radius: 5px;
+                    box-shadow: var(--box-shadow);
+                    margin: 5px;
+                    padding: 15px;
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .experts .box img {
+                    background: #f8f8fe;
+                    border-radius: 5px;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+
+                .experts .box h3 {
+                    font-size: 22px;
+                    margin: 2px 0;
+                    color: var(--black);
+                }
+
+                .experts .box span {
+                    font-size: 15px;
+                    color: var(--main-color);
+                }
+
+                .experts .box .share {
+                    position: absolute;
+                    top: 5px;
+                    right: -50px;
+                    transition: .2s;
+                }
+
+                .experts .box:hover .share {
+                    right: 15px;
+                }
+
+                .experts .box .share a {
+                    border-radius: 5px;
+                    background: var(--main-color);
+                    color: #fff;
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    margin-top: 5px;
+                }
+
+                .experts .box .share a:hover {
+                    background: var(--black);
+                }
+
+                .contact form {
+                    padding: 15px;
+                    border-radius: 5px;
+                    box-shadow: var(--box-shadow);
+                }
+
+                .contact form .box,
+                .contact form textarea {
+                    background: #f8f8fe;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    padding: 10px;
+                    margin: 7px 0;
+                    width: 100%;
+                    text-transform: none;
+                    color: var(--black);
+                }
+
+                .contact form textarea {
+                    resize: none;
+                    height: 200px;
+                }
+
+                .contact .map {
+                    border-radius: 5px;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .blogs .box {
+                    width: 350px;
+                    border-radius: 5px;
+                    box-shadow: var(--box-shadow);
+                    background: #fff;
+                }
+
+                .blogs .box .image {
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: #f8f8fe;
+                }
+
+                .blogs .box .image img {
+                    transition: .2s linear;
+                }
+
+                .blogs .box:hover .image img {
+                    transform: scale(1.1);
+                }
+
+                .blogs .box .content h3 {
+                    padding: 5px 0;
+                    font-size: 20px;
+                    color: var(--black);
+                }
+
+                .blogs .box .content .icons {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    border-top: 1px solid rgba(0, 0, 0, .1);
+                }
+
+                .blogs .box .content .icons a {
+                    color: #777;
+                    font-size: 13px;
+                }
+
+                .blogs .box .content .icons a i {
+                    padding-right: 7px;
+                }
+
+
+                .blogs .box .content .icons a:hover {
+                    color: var(--main-color);
+                }
+            </style>
